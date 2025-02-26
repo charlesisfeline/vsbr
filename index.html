@@ -17,14 +17,40 @@ a:visited {
 .auto-style2 {
 	border-width: 0px;
 }
+.auto-style3 {
+	border-style: solid;
+	border-width: 1px;
+}
 </style>
 <title>COMING SOON</title>
+<script type="text/javascript">
+<!--
+function FP_playSound(path) {//v1.0
+ var b,d=document,e,es,i,se="<EMBED SRC='"+path+"' HIDDEN=TRUE LOOP=FALSE AUTOSTART=TRUE>";			
+ if(d.body)b=d.body;	if(d.getElementsByTagName) { es=d.getElementsByTagName('embed')		
+ for(i=0;i<es.length;i++) { e=es(i); if( e.src==path ) { if(e.removeNode) e.removeNode();
+ break; } } if(b&&b.insertAdjacentHTML) b.insertAdjacentHTML("beforeend",se); }
+}
+
+function FP_callJS() {//v1.0
+ eval(arguments[0]);
+}
+// -->
+</script>
 </head>
 
 <body style="color: #FFFFFF; background-color: #000000">
 
+<script type="text/javascript">
+        function titleChange() {
+            helloYall = 'ILL BE WAITING';
+            document.querySelector('title').textContent
+                = helloYall;
+        }
+</script>
+
 <p class="auto-style1">
-<img height="265" src="bread_but_no_ead.png" width="311" /></p>
+<img height="433" src="characters/br.gif" width="435" onmouseover=" FP_callJS('titleChange()');" onclick="FP_playSound(/*url*/'scoory.MP3')" /><img height="452" src="characters/eg.png" width="452" /></p>
 <p class="auto-style1">CHECK AGAIN LATER, COMING THIS SPRING</p>
 <p class="auto-style1">CHECK AGAIN LATER, COMING THIS SPRING</p>
 <p class="auto-style1">CHECK AGAIN LATER, COMING THIS SPRING</p>
