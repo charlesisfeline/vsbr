@@ -46,16 +46,15 @@ a {
 }
 </style>
 <script type="text/javascript">
-<!--
-function FP_playSound(path) {//v1.0
- var b,d=document,e,es,i,se="<EMBED SRC='"+path+"' HIDDEN=TRUE LOOP=FALSE AUTOSTART=TRUE>";			
- if(d.body)b=d.body;	if(d.getElementsByTagName) { es=d.getElementsByTagName('embed')		
- for(i=0;i<es.length;i++) { e=es(i); if( e.src==path ) { if(e.removeNode) e.removeNode();
- break; } } if(b&&b.insertAdjacentHTML) b.insertAdjacentHTML("beforeend",se); }
+var fard = new Audio();
+function fardSfx(file) {
+    fard.pause();
+    fard = new Audio(file);
+    fard.src = file;
+    fard.play();
 }
-// -->
 </script>
-<meta content="revealTrans(Duration=0.5,Transition=5)" http-equiv="Page-Enter" />
+<meta content="revealTrans(Duration=1,Transition=5)" http-equiv="Page-Enter" />
 </head>
 
 <body style="background-image: url('homePage/clouds.gif')">
@@ -78,7 +77,7 @@ tho.)&nbsp;-</span></em><span class="auto-style8"><a class="auto-style9" href="h
 <p class="auto-style1">&nbsp;</p>
 <p class="auto-style1">
 <em>
-<img alt="fard" height="84" onclick="FP_playSound(/*url*/'homePage/fard.mp3')" src="homePage/lol.png" style="float: right" width="240"><a href="https://github.com/charlesisfeline/VsBrMod/archive/refs/heads/main.zip"><img alt="DOWNLOAD" class="auto-style2" height="90" src="homePage/download.png" width="255" style="float: right" /></a></em></p>
+<img alt="fard" height="84" onclick="fardSfx('fard.mp3')" src="homePage/lol.png" style="float: right" width="240"><a href="https://github.com/charlesisfeline/VsBrMod/archive/refs/heads/main.zip"><img alt="DOWNLOAD" class="auto-style2" height="90" src="homePage/download.png" width="255" style="float: right" /></a></em></p>
 
 <p class="auto-style1">&nbsp;</p>
 <p class="auto-style1">&nbsp;</p>
