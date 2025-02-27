@@ -9,7 +9,7 @@
     <meta content="© The br Crew 2024-2025" name="copyright" />
     <!-- bros looking at the shit html/css code :skull: -->
     <!-- im being srs here, this is messy asf, might clean up later! -->
-    <title>FNF Vs. br</title>
+    <title>Characters - FNF Vs. br</title>
     <style type="text/css">
       .auto-style1 {
         text-align: right;
@@ -70,21 +70,31 @@
         text-align: center;
         font-family: "Comic Sans MS";
       }
+    .auto-style22 {
+		background-color: #000000;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		text-decoration: underline;
+		text-align: center;
+		color: #FFFFFF;
+	}
+    .auto-style24 {
+		text-align: center;
+		color: #000000;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+	}
     </style>
     <link rel="stylesheet" href="breadAndButter.css" />
-    <script type="text/javascript">
-      var fard = new Audio();
-      function fardSfx(file) {
-        fard.pause();
-        fard = new Audio(file);
-        fard.src = file;
-        fard.play();
-      }
-    </script>
     <meta
       content="revealTrans(Duration=1,Transition=5)"
       http-equiv="Page-Enter"
     />
+    <script type="text/javascript">
+<!--
+function FP_popUpMsg(msg) {//v1.0
+ alert(msg);
+}
+// -->
+</script>
   </head>
 
   <body style="background-image: url('homePage/clouds.gif')">
@@ -239,22 +249,66 @@
       class="bodymain"
       align="right"
       style="left: 54px; top: -709px; width: 1095px; height: 650px"
-    >
-      <p class="auto-style20">&nbsp;</p>
+    >      
+    <p class="auto-style20">&nbsp;</p>
       <p class="auto-style4">
-        <img height="242" src="charPage/br.gif" width="172" /><img
-          height="242"
-          src="charPage/eg.png"
-          width="172"
-        /><img height="242" src="charPage/sguitar.png" width="172" /><img
-          height="242"
+        <img height="242" src="charPage/br.gif" width="172" id="brImg" onclick="FP_popUpMsg('br is a digital slice of bread who comes from a drawing on FlipaClip, his code has flew towards the hit game creation tool &quot;Roblox&quot; and created a game called &quot;br\'s house&quot;. Right now, he no longer lives there anymore as he was sent back to the white void due to breaking the code law. He has an evil virus inside of him, hidden in the Roblox source code. Later on, after his home was destroyed, he lives in the actual void, but it\'s inside his own head. He ain\'t alone tho...')" /><img
+          height="242" src="charPage/eg.png" id="egImg" width="172" onclick="FP_popUpMsg('eg is another digital food-like drawing. However, he has a different story. eg is an egg who is basically br\'s enemy/bully, eg is never happy (at least usually), and his creator made him to be this way. (NO, BR AND EG DONT HAVE FAMILIES, NOR DO THEY KNOW BOUT DATING!) \r\neg usually likes to pick on br, like hitting him with a frying pan or throwing a toaster and water at him.\r\nbr would sometimes write a message to eg, telling him to watch his &quot;dog&quot;, so he would get some rest to get ready for dog-watching.\r\nThe next day, eg is just chilling in the FlipaClip universe. (He forgot to watch br\'s &quot;dog&quot;.) He notices that all of his food friends (including br) have gone missing, and eg doesn\'t really know what happened, but he knew that he did something wrong, that left him the same egg that he is today.\r\neg would later find a fully charged phone with a singular phone number, what he\'s in contact with now is what he only talks to. (Unless it\'s bf-br who WHOOPED his ass.)\r\neg can also get even more angry when his top shell is cracked open.')"
+        /><img height="242" src="charPage/sguitar.png" id="sillyImg" width="172" onclick="FP_popUpMsg('Silly Guitar originates from the old Roblox gear with the same name.\r\nSilly Guitar, or Silly for short, is different in br\'s house, he is kept as an outside pet for br (he thinks he\'s a dog). br was scrolling through time through the infected evil code in 2012, he came across Silly Guitar (the gear) was in some laboratory who was due for testing. br felt bad and decided to kill every scientist and everyone else in the building, or did he? (This is not referring to the hour of joy from Poppy Playtime, that is different.)\r\nbr brought Silly Guitar back to his home, a safe place in the middle of a farmer field. And now br and Silly are one together as best friends.')" /><img
+          height="242" id="mikeImg"
           src="charPage/mmike.png"
-          width="172"
-        /><img height="242" src="charPage/bf.png" width="172" />
+          width="172" onclick="FP_popUpMsg('Mini Mike is a cute little stickman who is the clone of the pro wrestler Mike the Stickman!!! X3 (Mini Mike is still a kid, yes.His age hasn\'t been confirmed yet though.)\r\nMini mike is based on Lil Petey from Dog Man. (lol) Mini Mike lives in a fun and happy little city named after him, hooray to this little champ!! \r\nHowever, not all things aren\'t as cute. Mini Mike is the one of the survivors from the br attack, he got out alive by jumping through a window from the 2nd floor. (He landed in a bunch of pillows because he slept outside for some reason, he likes the rats from the dumpster.)\r\nThe city is named after this cute little guy is because he is the ONLY one who survived the br attack, and the mayor just let him run for mayor. He didn\'t know what he was doing (cuz again, he\'s still young) so he just made the city colorful and cute, and named the new city, &quot;MINI MIKE CITY!!1!!1!!111!!!!! YAY!!!!!! ;3 :3 :O&quot;\r\nMini Mike is dead now, sadly :( Mike can always clone another of him, however.')"
+        /><img height="242" id="bfImg" src="charPage/bf.png" width="172" onclick="FP_popUpMsg('bf-br is basically just Boyfriend, only he is a blue ball, idk that\'s just his roblox avatar lmfao. ')" />
       </p>
-      <p class="auto-style4">&nbsp;</p>
+      <h2 class="auto-style22" id="charName">Hover over a 
+	  character to see their name!</h2>
+		<p class="auto-style24"><img height="28" src="arrow.gif" width="24" />Click on a character to see their description!</p>
     </div>
-    <p class="auto-style1">&nbsp;</p>
-    <p class="auto-style1">&nbsp;</p>
+        
+    <script type="text/javascript"> 
+const br = document.getElementById('brImg')
+const eg = document.getElementById('egImg')
+const sillyg = document.getElementById('sillyImg')
+const mini = document.getElementById('mikeImg')
+const bf = document.getElementById('bfImg')
+
+br.addEventListener('mouseover', () => {
+    document.getElementById("charName").innerHTML = "br";
+})
+
+br.addEventListener('mouseout', () => {
+    document.getElementById("charName").innerHTML = "Hover over a character to see their name!";
+})
+
+eg.addEventListener('mouseout', () => {
+    document.getElementById("charName").innerHTML = "Hover over a character to see their name!";})
+
+eg.addEventListener('mouseover', () => {
+    document.getElementById("charName").innerHTML = "eg";
+})
+
+sillyg.addEventListener('mouseout', () => {
+    document.getElementById("charName").innerHTML = "Hover over a character to see their name!";
+})
+
+sillyg.addEventListener('mouseover', () => {
+    document.getElementById("charName").innerHTML = "Silly Guitar";
+})
+
+mini.addEventListener('mouseout', () => {
+    document.getElementById("charName").innerHTML = "Hover over a character to see their name!";
+})
+
+mini.addEventListener('mouseover', () => {
+    document.getElementById("charName").innerHTML = "Mini Mike";
+})
+
+bf.addEventListener('mouseover', () => {
+    document.getElementById("charName").innerHTML = "Boyfriend (bf-br)";
+})
+
+bf.addEventListener('mouseout', () => {
+    document.getElementById("charName").innerHTML = "Hover over a character to see their name!";
+})</script>
   </body>
 </html>
