@@ -270,9 +270,9 @@ function FP_popUpMsg(msg) {//v1.0
           height="242" id="mikeImg"
           src="charPage/mmike.png"
           width="172" onclick="FP_popUpMsg('Mini Mike is a cute little stickman who is the clone of the pro wrestler Mike the Stickman!!! X3 (Mini Mike is still a kid, yes.His age hasn\'t been confirmed yet though.)\r\nMini mike is based on Lil Petey from Dog Man. (lol) Mini Mike lives in a fun and happy little city named after him, hooray to this little champ!! \r\nHowever, not all things aren\'t as cute. Mini Mike is the one of the survivors from the br attack, he got out alive by jumping through a window from the 2nd floor. (He landed in a bunch of pillows because he slept outside for some reason, he likes the rats from the dumpster.)\r\nThe city is named after this cute little guy is because he is the ONLY one who survived the br attack, and the mayor just let him run for mayor. He didn\'t know what he was doing (cuz again, he\'s still young) so he just made the city colorful and cute, and named the new city, &quot;MINI MIKE CITY!!1!!1!!111!!!!! YAY!!!!!! ;3 :3 :O&quot;\r\nMini Mike is dead now, sadly :( Mike can always clone another of him, however.')"
-        /><img height="242" id="bfImg" src="charPage/bf.png" width="172" onclick="FP_popUpMsg('bf-br is basically just Boyfriend, only he is a blue ball, idk that\'s just his roblox avatar lmfao. \r\n\r\n&quot;Whoospie daisy!&quot; -bf-br, 2025 ')" /><img height="242" src="charPage/rblxbr.png" width="172" onclick="FP_popUpMsg('Roblox BR is one of the creator\'s old avatars. Idk, he was dancing in some backrooms gmod thingy.')" /></p>
+        /><img height="242" id="bfImg" src="charPage/bf.png" width="172" onclick="FP_popUpMsg('bf-br is basically just Boyfriend, only he is a blue ball, idk that\'s just his roblox avatar lmfao. \r\n\r\n&quot;Whoospie daisy!&quot; -bf-br, 2025 ')" /><img height="242" id="rblxImg" src="charPage/rblxbr.png" width="172" onclick="FP_popUpMsg('Roblox BR is one of the creator\'s old avatars. Idk, he was dancing in some backrooms gmod thingy.')" /></p>
 		<p class="auto-style4">
-        <img height="242" src="charPage/fred.png" width="172" onclick="FP_popUpMsg('Fred is a digital entity created from channel 666, It uses the vessel of youtuber named BreadBoyoo, also mainly relating to TSFAOB. (The Stupid Fucking Adventures of Bread)\r\nFred is mainly known to rip peoples faces off, and he has a greed for money.\r\nFred has a reason for being greedy. He found Toasted\'s mother\'s credit card after an unknown person dropped it somewhere (apparently), Toasted then found his mom\'s credit card, but Fred was behind him, watching, waiting, stalking his first victim...\r\nNow, Fred is on the loose. He has taken 5 people\'s lives already, who knows what kind of tricks he has up on his sleeve?\r\n\r\n\r\nFred is coming...\r\n(Fred also originates from TSFAOB: Amazing Grace, the analog horror series by BreadBoyoo.)')" /><img height="242" src="charPage/sketchbr.png" width="172" onclick="FP_popUpMsg('Sketch BR is a sketch/paper version of br, based off of Sketchy, one of those old mods from 2021 ig. \r\nSketch BR cannot speak English, he can only speak in writing (or pencil) noises.')" /><img height="242" src="charPage/sandvich.png" width="172" onclick="FP_popUpMsg('Heavy Sandvich, is well, the Heavy Sandvich from the hit Valve game, Team Fortress 2 (or TF2 for short).\r\nHeavy Sandvich is an item in br\'s house, the only way to get it is by getting on the roof of br\'s house.\r\nbr found this item and placed it on the roof and left it there for decades. ')" /></p>
+        <img height="242" id="fredImg" src="charPage/fred.png" width="172" onclick="FP_popUpMsg('Fred is a digital entity created from channel 666, It uses the vessel of youtuber named BreadBoyoo, also mainly relating to TSFAOB. (The Stupid Fucking Adventures of Bread)\r\nFred is mainly known to rip peoples faces off, and he has a greed for money.\r\nFred has a reason for being greedy. He found Toasted\'s mother\'s credit card after an unknown person dropped it somewhere (apparently), Toasted then found his mom\'s credit card, but Fred was behind him, watching, waiting, stalking his first victim...\r\nNow, Fred is on the loose. He has taken 5 people\'s lives already, who knows what kind of tricks he has up on his sleeve?\r\n\r\n\r\nFred is coming...\r\n(Fred also originates from TSFAOB: Amazing Grace, the analog horror series by BreadBoyoo.)')" /><img height="242" src="charPage/sketchbr.png" width="172" id="sketchImg" onclick="FP_popUpMsg('Sketch BR is a sketch/paper version of br, based off of Sketchy, one of those old mods from 2021 ig. \r\nSketch BR cannot speak English, he can only speak in writing (or pencil) noises.')" /><img height="242" id="sandvichImg" src="charPage/sandvich.png" width="172" onclick="FP_popUpMsg('Heavy Sandvich, is well, the Heavy Sandvich from the hit Valve game, Team Fortress 2 (or TF2 for short).\r\nHeavy Sandvich is an item in br\'s house, the only way to get it is by getting on the roof of br\'s house.\r\nbr found this item and placed it on the roof and left it there for decades. ')" /></p>
       <h2 class="auto-style22" id="charName">Hover over a
 	  character to see their name!</h2>
 		<p class="auto-style24"><img height="28" src="arrow.gif" width="24" />Click on a character to see their description!</p>
@@ -284,6 +284,10 @@ const eg = document.getElementById('egImg')
 const sillyg = document.getElementById('sillyImg')
 const mini = document.getElementById('mikeImg')
 const bf = document.getElementById('bfImg')
+const rblx = document.getElementById('rblxImg')
+const fred = document.getElementById('fredImg')
+const sketchbr = document.getElementById('sketchImg')
+const sandvich = document.getElementById('sandvichImg')
 
 br.addEventListener('mouseover', () => {
     document.getElementById("charName").innerHTML = "br";
@@ -322,6 +326,39 @@ bf.addEventListener('mouseover', () => {
 
 bf.addEventListener('mouseout', () => {
     document.getElementById("charName").innerHTML = "Hover over a character to see their name!";
-})</script>
+})
+
+sketchbr.addEventListener('mouseover', () => {
+    document.getElementById("charName").innerHTML = "Sketch BR";
+})
+
+sketchbr.addEventListener('mouseout', () => {
+    document.getElementById("charName").innerHTML = "Hover over a character to see their name!";
+})
+
+rblx.addEventListener('mouseover', () => {
+    document.getElementById("charName").innerHTML = "Roblox BR";
+})
+
+rblx.addEventListener('mouseout', () => {
+    document.getElementById("charName").innerHTML = "Hover over a character to see their name!";
+})
+
+fred.addEventListener('mouseover', () => {
+    document.getElementById("charName").innerHTML = "Fred";
+})
+
+fred.addEventListener('mouseout', () => {
+    document.getElementById("charName").innerHTML = "Hover over a character to see their name!";
+})
+
+sandvich.addEventListener('mouseover', () => {
+    document.getElementById("charName").innerHTML = "Heavy Sandvich";
+})
+
+sandvich.addEventListener('mouseout', () => {
+    document.getElementById("charName").innerHTML = "Hover over a character to see their name!";
+})
+</script>
   </body>
 </html>
